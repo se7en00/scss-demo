@@ -1,0 +1,33 @@
+{
+  "name": "webpackForTest",
+  "version": "1.0.0",
+  "description": "this is webpack Project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --progress --colors --hot"
+  },
+  "keywords": [
+    "web",
+    "pack"
+  ],
+  "author": "seven",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.15.0",
+    "node-sass": "^3.4.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.8",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "repository": {
+    "type": "git"
+  }
+}
