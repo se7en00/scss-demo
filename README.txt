@@ -1,1 +1,2 @@
-THIS IS WEB PACK TEST
+THIS IS WEB PACK Demo
+Just for practice webpack scss.
