@@ -1,2 +1,2 @@
-THIS IS WEB PACK Demo
+THIS IS WEB PACK Demo.
 Just for practice webpack scss.
