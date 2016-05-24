@@ -1,5 +1,6 @@
 var path = require("path");
 var webpack = require("webpack");
+var autoprefixer = require('autoprefixer');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -49,12 +50,12 @@ module.exports = {
              * SASS
              * https://github.com/jtangelder/sass-loader
              */
-    		{ test: /\.scss$/, loader: ExtractTextPlugin.extract("style","css?sourceMap!sass")},
+    		{ test: /\.scss$/, loader: ExtractTextPlugin.extract("style","css?sourceMap!postcss!sass")},
 
             {test: /\.html$/,loader: "html"}
     	]
     },
-
+    postcss: [ autoprefixer({ browsers: ['last 3 versions'] }) ],
     devServer: {
         historyApiFallback: true,
         contentBase: "./app",
