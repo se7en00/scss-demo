@@ -55,7 +55,11 @@ module.exports = {
             {test: /\.html$/,loader: "html"}
     	]
     },
-    postcss: [ autoprefixer({ browsers: ['last 3 versions'] }) ],
+
+    postcss: [ 
+        autoprefixer({ browsers: ['last 3 versions'] }) 
+    ],
+
     devServer: {
         historyApiFallback: true,
         contentBase: "./app",
