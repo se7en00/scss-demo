@@ -8,8 +8,10 @@
     "start": "webpack-dev-server --progress --colors --hot"
   },
   "keywords": [
-    "web",
-    "pack"
+    "webpack",
+    "sass",
+    "scss",
+    "css3"
   ],
   "author": "seven",
   "license": "ISC",

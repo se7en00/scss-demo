@@ -1,0 +1,31 @@
+//translate px to em
+@function pxToEm($px, $base: 16) {
+  @return ($px / $base) * 1em;
+}
+
+//strip units
+@function strip-units($number){
+  @return $number / ($number * 0 + 1);
+}
+
+//check the the $value is in list($values)
+@function is($value, $values) {
+  @return not not index($values, $value);
+}
+
+// Returns the highest value
+// ---
+// @param [argList] $values: numbers
+// ---
+@function max($values...) {
+  $max: nth($values, 1);
+
+  @for $i from 2 through length($values) {
+    $value: nth($values, $i);
+    @if $value > $max {
+      $max: $value;
+    }
+  }
+
+  @return $max;
+}

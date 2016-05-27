@@ -50,7 +50,7 @@ module.exports = {
              * SASS
              * https://github.com/jtangelder/sass-loader
              */
-    		{ test: /\.scss$/, loader: ExtractTextPlugin.extract("style","css?sourceMap!postcss!sass")},
+    		{ test: /\.scss$/, loader: ExtractTextPlugin.extract("style","css?sourceMap!postcss!sass?sourceMap")},
 
             {test: /\.html$/,loader: "html"}
     	]
