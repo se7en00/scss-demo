@@ -19,7 +19,7 @@ $rem-baseline: $base-font-size;
 
 // REM CALC 
 // Optionally call with a different base (eg: 8px) to calculate rem: rem-calc(16px 32px 48px, 8px);
-@function pxToRem($values) {
+@function rem-calc($values) {
   $max: length($values);
 
   @if $max == 1 { @return convert-to-rem(nth($values, 1)); }
