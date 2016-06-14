@@ -1,2 +1,10 @@
+@charset "UTF-8";
+
+@import "../variables";
+@import "../color/colors";
+@import "../mixin/rem";
 @import "../base/base";
-@import "../module/bubble"
+@import "../mixin/triangle";
+@import "../module/bubble";
+
+
